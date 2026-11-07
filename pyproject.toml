@@ -1,0 +1,15 @@
+[project]
+name = "nk-dho924s-mcp"
+version = "0.1.0"
+description = "MCP server for the NK TECHNOLOGIES DHO924S oscilloscope firmware (modded Rigol DHO800/900) over LAN SCPI"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2,<2", "numpy"]
+
+[project.scripts]
+nk-dho924s-mcp = "nk_dho924s_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
